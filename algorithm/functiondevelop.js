@@ -35,7 +35,7 @@ function solution(progresses, speeds) {
             pushCount = 0;
         }
     }
-    console.log(answer);
+    //console.log(answer);
     return answer;
 }
 
