@@ -10,5 +10,6 @@ function solution(numbers) {
         }
     }
     var answer = Array.from(mySet).sort((a,b) => {return a-b});
+    // console.log(answer);
     return answer;
 }

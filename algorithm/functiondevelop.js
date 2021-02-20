@@ -1,5 +1,5 @@
-var progresses = [93, 30, 55];
-var speeds = [1, 30, 5];
+var progresses = [95, 90, 99, 99, 80, 99];
+var speeds = [1, 1, 1, 1, 1, 1]	;
 
 solution(progresses,speeds);
 
@@ -11,13 +11,13 @@ function solution(progresses, speeds) {
     
 
     while(count > 0){
-        // pmt 배열을 반복 speed로 각 배열마다 한번씩 더해준다.
+        //배열을 반복 speed로 각 배열마다 한번씩 더해준다.
         for(var i = 0; i < speeds.length; i++){
             progresses[i] = progresses[i] + speeds[i];
         }
 
 
-        // PMT 배열의 100 여부 넘는것을 판별
+        // 배열의 100 여부 넘는것을 판별
         for(var j = 0; j < progresses.length; j++){
             if(progresses[j] >= 100){
                 pushCount++;
@@ -35,7 +35,7 @@ function solution(progresses, speeds) {
             pushCount = 0;
         }
     }
-    //console.log(answer);
+    console.log(answer);
     return answer;
 }
 
