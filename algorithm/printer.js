@@ -1,4 +1,4 @@
-priorities = [9,8,7,1,8,9,8] ;
+priorities = [9,8,7,9,8,6] ;
 location = 0;
 
 solution(priorities, location)
@@ -21,7 +21,7 @@ function solution(priorities, location) {
                 if( i === location){
                     answer = count;
                 }
-                //console.log(priorities);
+                console.log(priorities);
                 //console.log("memory의 값은 ? " + memory)
             }
         }
@@ -36,14 +36,12 @@ function solution(priorities, location) {
                 if( j === location){
                     answer = count;
                 }
-                //console.log(priorities);
+                console.log(priorities);
                 //console.log("memory의 값은 ? " + memory)
             }
-        }
-
-        
+        }       
     }
-    //console.log("답은 " + answer);
+    console.log("답은 " + answer);
 
     return answer;
 }

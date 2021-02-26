@@ -6,13 +6,15 @@ solution(a,b);
 
 function solution(a, b) {
     var answer = 0;
-    if (a > b) {
-        answer = (a + b) * (a-b + 1) / 2
-    } else if ( b > a){
-        answer = (b+ a) * (b-a + 1) / 2
-    } else if( a === b){
-        answer = a;
-    }
+    // if (a > b) {
+    //     answer = (a + b) * (a-b + 1) / 2
+    // } else if ( b > a){
+    //     answer = (b+ a) * (b-a + 1) / 2
+    // } else if( a === b){
+    //     answer = a;
+    // }
+     
+    answer = (a+b) * (Math.abs(a-b)+1) / 2
     console.log(answer);
     return answer;
 }
