@@ -1,5 +1,5 @@
 var n = 8;
-var lost = [1,2,3,4,5,6,7,8];
+var lost = [1,2,3,4];
 var reserve = [1,3,5];
 solution(n,lost,reserve);
 
@@ -14,6 +14,7 @@ function solution(n, lost, reserve) {
     }
     // 전체학생 출력
     console.log("1 : " + student);
+
     //--------------------------------------------
     for (let j = 0; j< lost.length; j++){
         student[lost[j]-1] = "x";
@@ -22,6 +23,7 @@ function solution(n, lost, reserve) {
     console.log("2 : " + student);
 
     //---------------------------------------------
+    // 같은 숫자에 넣어준다.
     for(let k = student.length; k>0; k--){
         if(student[k-1] == "x"){
             if(reserve.indexOf(k) > -1){
@@ -30,6 +32,10 @@ function solution(n, lost, reserve) {
             }
         }
     }
+
+    console.log("3 : " + student);
+
+    // 높거나 작으면 넣어준다.
     for(let k = student.length; k>0; k--){
         if(student[k-1] == "x"){
             for (let l = reserve.length; l > 0; l--){
@@ -41,7 +47,7 @@ function solution(n, lost, reserve) {
         }
     }
     // x를 채워준값
-    console.log("3 : " + student);
+    console.log("4 : " + student);
     console.log(reserve);
 
     for(let m = 0; m <student.length; m++){
