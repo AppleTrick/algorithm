@@ -54,18 +54,14 @@ function solution(s) {
 
         let item = s[0];
 
-        console.log(s);
-
         s = s.substr(1);
 
         s = s + item;
 
     }
 
-    console.log(count);
+    return count;
 
 }
 
-let s = "{}()[]"
-solution(s)
 
