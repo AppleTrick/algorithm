@@ -1,5 +1,9 @@
 function solution(weights, head2head) {
-    let answer = [0,1,2];
+    let answer = [];
+
+    for(let i = 0; i < weights.length; i++){
+        answer.push(i);
+    }
     const result = [];
     const result1 = [];
 
