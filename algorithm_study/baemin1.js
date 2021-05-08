@@ -46,6 +46,6 @@ function solution(weights, head2head) {
     return answer;
 }
 
-const weights = [142,92,86];
-const head2head = ["NLW","WNL","LWN"]
+const weights = [50,82,75,120];
+const head2head = ["NLWL","WNLL","LWNW","WWLN"]
 solution(weights,head2head)
