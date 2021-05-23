@@ -37,7 +37,7 @@ function solution(numbers, hand) {
 
 }
 
-function checkLocationNum(e , handlocation, answer, hand){
+function checkLocationNum(e , handlocation, answer1, hand){
     const num = parseInt((e-1)/3);
     const numRemain = ((e-1)%3);
     const leftNum = parseInt((handlocation.left-1)/3);
@@ -51,21 +51,21 @@ function checkLocationNum(e , handlocation, answer, hand){
 
     // 왼쪽이 더 가깝다면
     if(Math.abs(num-leftNum)+Math.abs(numRemain-leftNumRemain) < Math.abs(num-rightNum)+Math.abs(numRemain-rightNumRemain)){
-        answer.push('L');
+        answer = answer1.concat('L');
         handlocation.left = e;
 
     // 오른쪽이 더 가깝다면
     }else if(Math.abs(num-leftNum)+Math.abs(numRemain-leftNumRemain) > Math.abs(num-rightNum)+Math.abs(numRemain-rightNumRemain)){
-        answer.push('R');
+        answer = answer1.concat('R');
         handlocation.right = e;
 
     // 거리가 같다면
     }else{
         if(hand === 'left'){
-            answer.push('L');
+            answer = answer1.concat('L');
             handlocation.left = e;
         }else{
-            answer.push('R');
+            answer = answer1.concat('R');
             handlocation.right = e;
         }
     }

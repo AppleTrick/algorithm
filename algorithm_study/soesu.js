@@ -40,7 +40,7 @@ function decimal(val , set){
 }
 
 let numbers = "17";
-solution(numbers);
+console.log(solution(numbers));
 
 // let arr = [1,2,3];
 // arr = [...arr];
