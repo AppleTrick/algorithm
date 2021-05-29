@@ -26,15 +26,15 @@ function solution(numbers, target) {
             thisResult === target ? count++ : count;
         // 아닐경우
         }else{ 
-            console.log("현재 깊이 : " ,thisDeep);
-            console.log("현재까지의 결과 값 : " , thisResult);
-            console.log("배열 값  : " ,numbersArray[thisDeep]);
-            console.log("count횟수 : ", count);
+            // console.log("현재 깊이 : " ,thisDeep);
+            // console.log("현재까지의 결과 값 : " , thisResult);
+            // console.log("배열 값  : " ,numbersArray[thisDeep]);
+            // console.log("count횟수 : ", count);
             
             let plus = thisResult + numbersArray[thisDeep];
             let minus = thisResult - numbersArray[thisDeep];
 
-            console.log("-----");
+            // console.log("-----");
             thisDeep++
             plusMinus(thisDeep,numbersArray, plus , target, count);
             plusMinus(thisDeep,numbersArray, minus, target, count);
@@ -42,7 +42,7 @@ function solution(numbers, target) {
         
     }
 
-    console.log(count);
+    return count;
 }
 
 // 방법 (숫자를 적절히 더하고 빼서)
