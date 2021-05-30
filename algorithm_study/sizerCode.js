@@ -15,7 +15,7 @@ function solution(s, n) {
     for (const key in s) {
         let charcode = s.charCodeAt(key)
         if(charcode < 91 && charcode >64){
-            charcode = charcode + (n % 26);
+            charcode = charcode + (n % 26); //  90 = z  +  25
             charcode > 90 ? result.push(String.fromCharCode(charcode - 26)) : result.push(String.fromCharCode(charcode))
             
         } else if(charcode >96 && charcode <123) { 
