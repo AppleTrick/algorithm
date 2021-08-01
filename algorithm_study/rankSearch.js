@@ -33,7 +33,6 @@ function solution(info, query) {
                             //console.log("실패 발생",l,quest[i][4],arr[k][4]);
                             break;;
                        }
-                       
                    }
                 }
             }
