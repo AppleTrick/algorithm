@@ -19,7 +19,7 @@ function solution(numbers, target) {
         // 현재까지의 결과값
         let thisResult = result
     
-        
+
         // 깊이가 최대 깊이일 경우
         if(thisDeep == numbersArray.length){
             // Count ++ 아니면 그냥 count
