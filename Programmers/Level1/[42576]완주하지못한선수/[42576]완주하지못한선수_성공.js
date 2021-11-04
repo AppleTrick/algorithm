@@ -18,3 +18,4 @@ console.log(solution(participant,completion));
 // 더 좋은 방법이 엄청 많음 확인해보고 어떻게 하는지 정리할것
 
 
+
