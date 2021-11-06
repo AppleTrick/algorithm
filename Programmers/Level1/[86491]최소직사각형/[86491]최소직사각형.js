@@ -23,5 +23,5 @@ console.log(solution(sizes));
 // feedback 1
 
 /*  
-    구조 분해할당을 잘 쓰기
+    구조 분해할당에 대해 자주 쓰고 연습하기
 */
