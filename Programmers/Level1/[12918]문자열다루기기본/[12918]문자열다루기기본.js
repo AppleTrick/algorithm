@@ -3,7 +3,7 @@
 */
 
 function solution(s) {
-    if(s.length >3 && s.length < 7){
+    if(s.length === 4 || s.length === 6){
         // console.log(s.match(/[^0-9]/g));
         if(s.match(/([^0-9])/g)){
             return false
@@ -17,3 +17,15 @@ function solution(s) {
 
 let s = "ㅁ234"
 console.log(solution(s));
+
+/*
+feedback1
+
+정규식의 마법을 잊지 말자!
+
+function alpha_string46(s){
+  var regex = /^\d{6}$|^\d{4}$/;
+  return regex.test(s);
+}
+
+*/
