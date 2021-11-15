@@ -6,9 +6,11 @@ function solution(d, budget) {
         if(budget < 0 ){
             let n = ck.filter((e) => e > 0).length
             answer = answer >= n-1 ? answer : n-1;
+            return;
         }else if(budget == 0){
             let n = ck.filter((e) => e > 0).length
             answer = answer >= n ? answer : n;
+            return;
         }else{
             for (let i = 0; i < d.length; i++) {
                 if(ck[i] !== 0){
