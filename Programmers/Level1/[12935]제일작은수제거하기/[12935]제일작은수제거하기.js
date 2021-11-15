@@ -12,3 +12,9 @@ function solution(arr) {
 
 let arr = [4,5,2,1];
 console.log(solution(arr));
+
+/*
+feedback 1
+splice
+
+*/
