@@ -14,7 +14,7 @@ console.log(solution(x,n));
 
 
 /*
-
+피드백!
 for 문보다 함수를 이용하는 방법을 생각하자
 Array(n).fill(x).map((e,i) => (1+i) * e);
 
