@@ -1,15 +1,11 @@
-function solution(str){
-    let result = str.split(' ');
-    // console.log(result);
-    let a = Number(result[0]);
-    let b = Number(result[1]);
-
-    for (let i = 0; i < b; i++) {
+process.stdin.setEncoding('utf8');
+process.stdin.on('data', data => {
+    const n = data.split(" ");
+    const a = Number(n[0])
+    const b = Number(n[1]);
+    
+    for(let i = 0; i < b; i++){
         let answer = "*".repeat(a);
-        console.log(answer);
+        console.log(answer)
     }
-}
-
-let str = "5 3"
-
-solution(str)
+});
