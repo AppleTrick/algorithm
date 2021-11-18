@@ -15,9 +15,9 @@ function solution(land) {
 
         answer = answer.map((e,i) => {
             if( i !== beforePos){
-                return max +e;
+                return max;
             }else{
-                return sub + e;
+                return e+sub;
             }
         })
 
@@ -29,7 +29,7 @@ function solution(land) {
 
 
 // let land = [[4, 3, 2, 1], [2, 2, 2, 1], [6, 6, 6, 4], [8, 7, 6, 5]];
-let land = [[1,2,3,5],[5,6,7,8],[4,3,2,1]];
+let land = [[4, 3, 2, 1], [2, 2, 2, 1], [6, 6, 6, 4], [8, 7, 6, 5]];
 console.log(solution(land));
 
 /*
