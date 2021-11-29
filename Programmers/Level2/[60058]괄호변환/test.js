@@ -18,7 +18,7 @@ function solution(p) {
         
         // 균형잡힌 u가 나와서 쪼갤 타이밍 (u,v)
 		if (left == right) { 
-          
+
             // '올바른 괄호' X
 			if (check == true) {
 				answer += '(';
@@ -43,5 +43,7 @@ function solution(p) {
     }
 }
 
-let str = "))(("
+let str = "))) ((( "
+
+
 console.log(solution(str));
