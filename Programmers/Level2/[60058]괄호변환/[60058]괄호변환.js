@@ -42,18 +42,10 @@ function solution(p) {
             }        
         }
 
-        // console.log("first의 값  : " + first , firstVal);
-        // console.log("second의 값 : " + second);
-
         if(!firstVal){
             second = retry(second);
-            return "(" + second + ")" + first.slice(1,-1).split('').reverse().join('');
+            return "(" + second + ")" + first.slice(1,-1).split('').map((e) => (e === "("?  ")" : "("  )).join('');
         }
-
-        // if(!firstVal && second.length === 0){
-        //     first = first.slice(1,-1).split('').reverse().join('');
-        //     return "(" + retry(first) + ")";
-        // }
 
         if(firstVal && second.length === 0){
             return first
@@ -70,6 +62,6 @@ function solution(p) {
     return retry(p);
 }
 
-let p = "))(("
+let p = "()()())))(((()"
 // let p = ""
 console.log(solution(p));
