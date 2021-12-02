@@ -14,16 +14,19 @@ function check(arr){
 
     for (let i = 0; i < 5; i++) {
         for (let j = 0; j < 5; j++) {
+            // P일 경우
             if(arr1[i][j] ==='P'){
                 for (let k = 0; k < 4; k++) {
                     if( i+x[k] >= 0 && j+y[k] >=0 && i+x[k] < 5 && j+ y[k]<5 && arr1[i+x[k]][j+y[k]] === "P"){
-                        // 주변이 P라면 => false 반환
+                        // 주변이 P라면 => 0 바로 반환
                         return 0;
                     }
                 }
             }
+            // O 일경우
             if(arr1[i][j] ==='O'){
                 let count = 0;
+                // 주변에 P가 2개 이상이면 바로 0 반환
                 for (let k = 0; k < 4; k++) {
                     if( i+x[k] >= 0 && j+y[k] >=0 && i+x[k] < 5 && j+ y[k]<5 && arr1[i+x[k]][j+y[k]] === "P"){
                         count++;
@@ -36,7 +39,6 @@ function check(arr){
         }
         
     }
-    console.log(arr1);
     return 1;
 }
 
