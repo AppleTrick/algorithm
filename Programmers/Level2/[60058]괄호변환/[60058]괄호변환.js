@@ -62,6 +62,6 @@ function solution(p) {
     return retry(p);
 }
 
-let p = "()()())))(((()"
+let p = "))((()))((()"
 // let p = ""
 console.log(solution(p));

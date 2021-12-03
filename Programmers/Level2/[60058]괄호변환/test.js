@@ -43,7 +43,7 @@ function solution(p) {
     }
 }
 
-let str = "))) ((( "
+let str = "))((()))((()"
 
 
 console.log(solution(str));
