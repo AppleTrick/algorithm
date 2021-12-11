@@ -35,11 +35,10 @@ function solution(N, road, K) {
         for (let i = 0; i < arrLog[start].length; i++) {
             sum = sum + arrLog[start][i][1];
 
-            if(sum <= K && arrLog[start][i][0] !== before){
-                if(!answer.has(arrLog[start][i][0])){
-                    answer.add(arrLog[start][i][0]);
-                }
-                queue.push(arrLog[start][i][0],sum,start);
+            if(sum <= K && arrLog[start][i][0] !== before && sum < arr[arrLog[start][i][0]]){
+                arr[arrLog[start][i][0]] = sum;
+                answer.add(arrLog[start][i][0]);
+                queue.push([arrLog[start][i][0],sum,start]);
             }
             sum = sum - arrLog[start][i][1];
         }
