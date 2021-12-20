@@ -17,7 +17,7 @@ function solution(s)
         }
     }
 
-    console.log(s);
+    // console.log(s);
     
     return s.length > 0 ? 0 : 1;
 }
