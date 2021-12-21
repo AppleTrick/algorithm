@@ -11,7 +11,7 @@ function solution(record) {
         if(record[i][0] !== 'Leave'){
             users[record[i][1]] = record[i][2]
             if(record[i][0] == 'Enter'){
-                answer.push([record[i][1],"님이 나갔습니다."])
+                answer.push([record[i][1],"님이 들어왔습니다."])
             }
         }else{
             answer.push([record[i][1],"님이 나갔습니다."])
@@ -22,9 +22,7 @@ function solution(record) {
         return ""+users[a]+b;
     })
 
-    console.log(answer);
-
-    return 0;
+    return answer;
 }
 
 const record = [
