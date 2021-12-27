@@ -4,10 +4,10 @@
 프로그래머스 [바로가기](https://programmers.co.kr/)
 
 
-### Level1
 
-### <details>
+<details>
 <summary>Level1</summary>
+<div markdown = "1">
     - 1845.폰켓몬
     - 12901.2016년
     - 12903.같은숫자는싫어
@@ -31,6 +31,7 @@
     - 12935.제일작은수제거하기
     - 12937.짝수와홀수
     - 12940.최대공약수와최소공배수
+</div>
 </details>
 
 
