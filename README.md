@@ -6,7 +6,7 @@
 
 ### Level1
 
-<details>
+### <details>
 <summary>Level1</summary>
     - 1845.폰켓몬
     - 12901.2016년
