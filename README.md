@@ -37,7 +37,14 @@
 </details>
 
 
-### Level2
+<details>
+<summary>Level2</summary>
+<div markdown = "1">
+<ul>
+    <li>72412.순위검색 // 다시 풀어보면 좋은 문제 // 순열조합, 이진탐색, 정규식</li>
+</ul>
+</div>
+</details>
 ### Level3
 
 
