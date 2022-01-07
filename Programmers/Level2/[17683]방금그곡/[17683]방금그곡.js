@@ -42,7 +42,7 @@ function solution(m, musicinfos) {
     return answer;
 }
 
-const m = "FFCC#BCC#BCC#BCC#B"
+const m = "CC#BCC#BCC#BCC#B"
 const musicinfos = ["03:00,03:30,FOO,CC#B", "04:00,04:08,BAR,CC#BCC#BCC#B"]
 
 console.log(solution(m,musicinfos));

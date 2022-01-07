@@ -59,7 +59,7 @@ function solution(info, query) {
         const array = infoMap[key];
 
         // key 값에 해당하는 사람들의 점수들이 나온다.
-        console.log(array , score);
+        // console.log(array , score);
         
         if (array) {
             let start = 0;          //  start = 0
@@ -68,7 +68,7 @@ function solution(info, query) {
             while (start < end) {
 
 
-                console.log(start, end);
+                // console.log(start, end);
 
                 // floor 내림
                 const mid = Math.floor((start + end) / 2);

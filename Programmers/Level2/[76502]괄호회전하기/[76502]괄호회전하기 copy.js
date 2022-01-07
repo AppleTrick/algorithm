@@ -34,7 +34,7 @@ function solution(s) {
             val = false;
         }
         
-        console.log(val);
+        // console.log(val);
 
         return val
 
