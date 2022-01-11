@@ -38,11 +38,15 @@ function solution(grid) {
             rdx += direct[idx][0];
             cdx += direct[idx][1];
 
+            // 범위를 초과했을 경우
+
             if (rdx < 0) rdx = cycle.length - 1; 
             if (rdx >= cycle.length) rdx = 0; 
             if (cdx < 0) cdx = cycle[0].length - 1; 
             if (cdx >= cycle[0].length) cdx = 0; 
 
+
+            // ㄱ
 
             if (grid[rdx][cdx] === "L") idx = [1, 2, 3, 0][idx]; 
             if (grid[rdx][cdx] === "R") idx = [3, 0, 1, 2][idx];
