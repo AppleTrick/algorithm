@@ -19,3 +19,7 @@ const n = 110011;
 const k = 10;
 
 console.log(solution(n,k));
+
+
+// return candidates.filter(v=>isPrime(+v)).length;
+// +v의 의미를 모르겟다.. 무슨 의미이지?
