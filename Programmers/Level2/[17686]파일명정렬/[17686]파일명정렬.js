@@ -1,21 +1,49 @@
 function solution(files) {
-    const regex = /^(\D+)(\d{1,5})(?:.*)$/; 
-    let [,ahead,aNumber] = files[0].match(regex);
-    let val = files[1].match(regex);
-    console.log(val);
-    
 
-    const pattern = /(\D+)(\d{1,5})/;
-    let [bHead, bNumber] = files[2].match(pattern).slice(1, 3);
-    console.log(bHead,bNumber);
+    files = files.map((e) => {
+
+        let numberStart;
+        let numberEnd;
+
+        for (let i = 0; i < e.length; i++) {
+            if(e[i].match(/\d/)){
+                numberStart = i;
+                for (let j = i+1; j < e.length; j++) {
+                    if(!e[j].match(/\d/)){
+                        numberEnd = j;
+                        break;
+                    }
+                }
+                break;
+            }
+        }
+
+        if(numberStart && numberEnd){
+            return [e.substr(0,numberStart), e.substr(numberStart,numberEnd - numberStart),e.substr(numberEnd) ]
+        }else if(numberStart && !numberEnd){
+            return [e.substr(0,numberStart), e.substr(numberStart), '']
+        }
+
+    });
+
+    files.sort((a,b) => {
+        const A = a[0].toUpperCase();
+        const B = b[0].toUpperCase();
+
+        if(A > B){
+            return 1;
+        }else if(A < B){
+            return -1;
+        }else{
+            return Number(a[1]) - Number(b[1]);
+        }
+    })
 
 
-    // console.log(ahead,aNumber);
-    let answer = 0;
-    return answer;
+    return files.map(e => e.join(''));
 }
 
-let files = ["img12.png", "img10.png", "img02.png", "img1.png", "IMG01.GIF", "img2.JPG"];
+let files =   ["img12.png", "img10.png", "img02.png", "img1.png", "IMG01.GIF", "img2.JPG"]
 
 console.log(solution(files));
 
@@ -28,3 +56,5 @@ console.log(solution(files));
 
     
 */
+
+// 제발 정규식으로 깔끔하게 푸는법좀 연습하자.. 이게 뭐냐..
