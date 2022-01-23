@@ -1,20 +1,20 @@
 
 
-// let fs = require('fs');
-// let input = fs.readFileSync('/dev/stdin').toString().split('\n');
+let fs = require('fs');
+let input = fs.readFileSync('/dev/stdin').toString().split('\n');
 
-// let count = input[0];
-// let numbers = [];
+let count = input[0];
+let numbers = [];
 
-let count = 3
-let numbers = [4,7,10];
+// let count = 3
+// let numbers = [4,7,10];
 
 
-// for (let i = 1; i < input.length; i++) {
-//   if (input[i] !== '') {
-//     numbers.push(input[i].split(' '));
-//   }
-// }
+for (let i = 1; i < input.length; i++) {
+  if (input[i] !== '') {
+    numbers.push(input[i].split(' '));
+  }
+}
 
 let arr = Array.from({length : 10} , () => 0)
 arr[0] = 1;
