@@ -7,7 +7,21 @@
 let fs = require('fs');
 let input = fs.readFileSync('/dev/stdin').toString().split(' ');
 
+let num = Number(input);
+
 //  여러줄로 입력 받을때
+
+// count : 횟수
+// numbers = [] 여러줄의 값들이 하나씩 들어간다.
 
 let fs = require('fs');
 let input = fs.readFileSync('/dev/stdin').toString().split('\n');
+
+let count = input[0];
+let numbers = [];
+
+for (let i = 1; i < input.length; i++) {
+  if (input[i] !== '') {
+    numbers.push(input[i].split(' '));
+  }
+}
